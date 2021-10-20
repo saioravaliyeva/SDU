@@ -1,0 +1,67 @@
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    filter: blur(3px);
+}
+#logo{
+    width: 15vw;
+}
+.input{
+    font-size: 1.1vw;
+}
+#input{
+    font-size: 1.1vw;
+}
+.text{
+    width: 70vw;
+    padding: 3vw;
+    background-color: #fff;
+    font-family: 'Poppins';
+    font-size: 18vw;
+}
+#kazbrit{
+    position: absolute ;
+    font-size: 5vw;
+    top: 30vw;
+    left: 1.3cm;
+    color: chartreuse;
+}
+header{
+    position: relative;
+    display: flex;
+    background-image: url(https://tengrinews.kz/userdata/news/2017/news_310418/thumb_m/photo_205595.jpg);
+    text-transform: uppercase;
+    background-size: 100%;
+    height: 37vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: justify;
+}
+#n_card{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+}
+#n_card img{
+    width: 70vw;
+    /* height: 800px; */
+}
+#n_card p{
+    font-size: 1.5vw;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}

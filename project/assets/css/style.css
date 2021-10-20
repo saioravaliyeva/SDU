@@ -1,0 +1,350 @@
+body {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* Container*/
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* Header */
+
+.header {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    transition: background 0.2s linear;
+}
+
+.header__inner {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__inner img {
+    height: 50px;
+    border-radius: 50%;
+}
+/* Nav */
+
+.nav {
+    display: flex;
+    font-size: 15px;
+    height: 100%;
+}
+
+.nav__link {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    transition: background 0.2s linear, opacity 0.2s linear;
+    text-transform: uppercase;
+}
+
+.nav__link:hover {
+    opacity: 0.6;
+}
+/* Intro */
+
+.intro {
+    margin-bottom: 30px;
+    height: 600px;
+    background: #000 url("https://sdu.edu.kz/wp-content/uploads/2020/03/Suleyman-e1583333111176.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.intro__inner {
+    display: flex;
+    height: 600px;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.intro__text {
+    text-align: right;
+    margin-bottom: 41px;
+}
+
+.intro__countries {
+    font-size: 15px;
+    color: white;
+}
+
+.intro__title {
+    position: relative;
+    font-size: 5vf;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    line-height: 100px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.intro__title-amp {
+    font-size: 170px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* Request */
+
+.request__form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #004AF2;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.request__form--intro {
+    position: relative;
+    bottom: -30px;
+}
+
+.request__form--right {
+    margin-left: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
+}
+
+.request__form-header {
+    padding: 20px 30px;
+    background-color: #033FC9;
+}
+
+.request__form-title {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 5px;
+    letter-spacing: 1.8px;
+}
+
+.request__form-text {
+    color: white;
+    font-size: 15px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.4;
+}
+
+.request__form-content {
+    padding: 30px;
+}
+/* Form */
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+    transition: border-color 0.1s linear;
+    padding-left: 40px;
+}
+
+.input::placeholder {
+    color: white;
+}
+
+.input:focus {
+    outline: none;
+    border-bottom-color: white;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 0;
+    padding: 15px 45px;
+    line-height: 1.1;
+    cursor: pointer;
+    background-color: #333;
+    border: 0;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn--orange {
+    background-image: linear-gradient(to right, #FF903E, #FF2C2C);
+}
+
+.btn--block {
+    display: block;
+    width: 100%;
+}
+
+.btn--shadow {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team-col {
+    padding: 0 15px;
+    width: 33.3333%;
+    margin-bottom: 30px;
+}
+
+.team__contacts li {
+    margin-bottom: 9px;
+    list-style: none;
+}
+
+.team__contacts {
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.team-photo {
+    margin-bottom: 12px;
+    box-shadow: 10px 5px 13px rgba(0, 0, 0, 0.16);
+}
+
+.team__name {
+    color: #2C2C2C;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.team__prof {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 11px;
+    color: #585858;
+}
+
+.team__contacts a {
+    text-decoration: none;
+    color: #585858;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+.team__contacts a:hover {
+    text-decoration: underline;
+}
+
+.team__contacts-icon {
+    width: 16px;
+    height: auto;
+    margin-right: 7px;
+}
+
+.reviews {
+    color: blue;
+    font-size: 40px;
+    text-align: center;
+}
+
+.section__title {
+    margin-bottom: 40px;
+    text-align: center;
+    padding-top: 60px;
+}
+/* Footer */
+
+.footer {
+    margin-top: 40px;
+    padding: 40px 0;
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    display: flex;
+}
+
+.footer__logo img {
+    margin-left: 20px;
+}
+
+.footer__name {
+    font-size: 40px;
+    font-weight: 600;
+    color: blue;
+    margin-bottom: 20px;
+}
+
+.footer__text {
+    font-size: 12px;
+    font-style: italic;
+}

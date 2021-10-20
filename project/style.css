@@ -1,0 +1,67 @@
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    filter: blur(3px);
+}
+#logo{
+    width: 14vw;
+}
+.input{
+    font-size: 1.1vw;
+}
+#input{
+    font-size: 1.1vw;
+}
+.text{
+    width: 70vw;
+    padding: 3vw;
+    background-color: #fff;
+    font-family: 'Poppins';
+    font-size: 18vw;
+}
+#kazbrit{
+    position: absolute ;
+    font-size: 3vw;
+    top: 30vw;
+    left: 1.3cm;
+    color: chartreuse;
+}
+header{
+    position: relative;
+    display: flex;
+    background-image: url(https://upload.wikimedia.org/wikipedia/ru/3/31/%D0%97%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85_%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9.jpg);
+    text-transform: uppercase;
+    background-size: 100%;
+    height: 37vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: justify;
+}
+#n_card{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+}
+#n_card img{
+    width: 70vw;
+    /* height: 800px; */
+}
+#n_card p{
+    font-size: 1.5vw;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
